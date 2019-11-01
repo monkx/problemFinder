@@ -46,9 +46,10 @@ for i in range(2*n/3):
     name.pop()
     levels.pop()
     round.pop()
+#fill arrays with the given level of difficulty
 while fill_level(level) == 0:
     level+=1
 k = len(user_level)
-rand_prob_num = random.randint(0,k)
+rand_prob_num = random.randint(0,k) #generate random problem number for the given level
 print user_problem[rand_prob_num]
 print user_round[rand_prob_num]
